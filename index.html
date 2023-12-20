@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WriterOP</title>
+  </head>
+  <body>
+    <div class="center">
+        
+        <span class="loader"></span>
+    </div>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with WriterOP",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "19358ba7-8191-478f-87eb-86c5d9148639",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "19358ba7-8191-478f-87eb-86c5d9148639",
+      "webhookId": "40d9ea58-db24-4249-b22a-3270154de032",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "WriterOP",
+      "frontendVersion": "v1",
+      "stylesheet":"https://webchat-styler-css.botpress.app/prod/code/ac6fa9ea-c6cf-4868-87b9-fc3a1eed5074/v47782/style.css",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+         "containerWidth": "100%25",
+        "layoutWidth": "100%25",
+        "hideWidget": true,
+        "disableAnimations": true,
+      });
+      window.botpressWebChat.onEvent(
+        function () {
+          window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+      )
+</script>
+  </body>
+</html>
